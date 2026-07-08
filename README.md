@@ -23,6 +23,12 @@ This software is licensed, not sold. See EULA.md.
 
 A commercial license is automatically granted upon receipt of a voluntary support contribution, as described in the EULA.
 
+## Standards supported
+
+ - ANSI/NIST-ITL
+ - INTERPOL
+ - FBI EBTS
+
 ## Support
 
 Open a GitHub Issue for public bug reports.

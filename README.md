@@ -1,2 +1,28 @@
-# NIST-Editor
-Desktop ANSI/NIST biometric record viewer, editor, validator, and NFIQ2 quality analysis tool for Windows.
+# NIST Editor
+
+NIST Editor is a Windows desktop tool for viewing, editing, validating, and analyzing ANSI/NIST biometric files.
+
+## Download
+
+Download the latest Windows release from the Releases page.
+
+## Features
+
+- ANSI/NIST Traditional file viewer/editor
+- Schema/profile-aware validation
+- Image preview
+- NFIQ2 fingerprint quality analysis
+- XML import/export support
+- Optional profile import support
+
+## License
+
+This software is licensed, not sold. See EULA.md.
+
+## Commercial Use
+
+A commercial license is automatically granted upon receipt of a voluntary support contribution, as described in the EULA.
+
+## Support
+
+Open a GitHub Issue for public bug reports.

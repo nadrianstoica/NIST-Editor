@@ -3,15 +3,13 @@
 ![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D4?style=for-the-badge)
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4?style=for-the-badge)
 ![WebView2](https://img.shields.io/badge/WebView2-Required-00A300?style=for-the-badge)
-![Release](https://img.shields.io/github/v/release/<YOUR_GITHUB_USERNAME>/NIST-Editor?style=for-the-badge)
-![Downloads](https://img.shields.io/github/downloads/<YOUR_GITHUB_USERNAME>/NIST-Editor/total?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Commercial-B22222?style=for-the-badge)
 
 ---
 
 # Comprehensive ANSI/NIST Biometric File Viewer, Editor, Validator and Analysis Tool
 
 **NIST Editor** is a professional Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST biometric files.
+The application processes ANSI/NIST-ITL files using traditional binary or NIEM-conformant XML encodings.
 
 It has been designed for:
 

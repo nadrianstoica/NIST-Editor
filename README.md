@@ -6,7 +6,7 @@
 
 ---
 
-# Comprehensive ANSI/NIST Biometric File Viewer, Editor, Validator and Analysis Tool
+## Comprehensive ANSI/NIST Biometric File Viewer, Editor, Validator and Analysis Tool
 
 **NIST Editor** is a professional Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST biometric files.
 The application processes ANSI/NIST-ITL files using traditional binary or NIEM-conformant XML encodings.
@@ -27,7 +27,7 @@ The application focuses on **correctness**, **interoperability**, **standards co
 
 ---
 
-# Live Demonstration
+## Live Demonstration
 
 <p align="center">
 
@@ -39,9 +39,9 @@ The application focuses on **correctness**, **interoperability**, **standards co
 
 ---
 
-# Main Features
+## Main Features
 
-## ANSI/NIST Traditional Support
+### ANSI/NIST Traditional Support
 
 ✔ Open Traditional ANSI/NIST files
 
@@ -59,7 +59,7 @@ The application focuses on **correctness**, **interoperability**, **standards co
 
 ---
 
-## XML Support
+### XML Support
 
 ✔ Import ANSI/NIST XML
 
@@ -73,7 +73,7 @@ The application focuses on **correctness**, **interoperability**, **standards co
 
 ---
 
-## Standards-Aware Editing
+### Standards-Aware Editing
 
 Built-in knowledge of multiple biometric standards and implementation profiles.
 
@@ -99,7 +99,7 @@ Optional implementation profiles can be imported without modifying the built-in 
 
 ---
 
-# Supported Record Types
+## Supported Record Types
 
 Supports editing and validation of numerous ANSI/NIST record types including:
 
@@ -130,7 +130,7 @@ Supports editing and validation of numerous ANSI/NIST record types including:
 
 ---
 
-# Image Support
+## Image Support
 
 Supports many biometric image encodings including:
 
@@ -160,7 +160,7 @@ Capabilities:
 
 ---
 
-# Fingerprint Quality Analysis
+## Fingerprint Quality Analysis
 
 Integrated **NFIQ2** quality analysis.
 
@@ -180,7 +180,7 @@ The overlay is rendered directly over the decoded image used for NFIQ2 processin
 
 ---
 
-# Validation Engine
+## Validation Engine
 
 The editor performs comprehensive validation including:
 
@@ -212,7 +212,7 @@ Validation messages include contextual explanations and repair suggestions where
 
 ---
 
-# Image Preview
+## Image Preview
 
 The integrated preview supports:
 
@@ -227,7 +227,7 @@ Large binary payloads remain fully preserved.
 
 ---
 
-# Type-12 Dental Support
+## Type-12 Dental Support
 
 Structured Traditional dental parsing including:
 
@@ -241,7 +241,7 @@ JSON/XML dental payloads are safely preserved while providing secure preview cap
 
 ---
 
-# NFIQ2 Integration
+## NFIQ2 Integration
 
 Integrated NFIQ2 analysis provides:
 
@@ -255,7 +255,7 @@ Integrated NFIQ2 analysis provides:
 
 ---
 
-# Privacy
+## Privacy
 
 **NIST Editor operates completely offline.**
 
@@ -267,7 +267,7 @@ All decoding, validation and quality analysis are performed locally.
 
 ---
 
-# Standards
+## Standards
 
 The integrated Help contains references to major biometric standards including:
 
@@ -284,7 +284,7 @@ The integrated Help contains references to major biometric standards including:
 
 ---
 
-# Windows Desktop
+## Windows Desktop
 
 Public Windows releases are built using
 
@@ -295,23 +295,57 @@ The HTML application is embedded inside the executable.
 
 ---
 
-# Commercial License
+## License
 
-This software is licensed, not sold.
+NIST Editor is **licensed, not sold**.
 
-Commercial use is governed by the End User License Agreement (EULA) included with the application.
+### Free Personal and Evaluation Use
 
-A commercial license is automatically granted upon receipt of a voluntary support contribution, which constitutes consideration for the license granted under the EULA.
+NIST Editor may be used **free of charge** for:
 
-**Any voluntary support contribution, regardless of amount, satisfies the consideration required for the commercial license granted under this Agreement.**
+* personal, non-commercial use; and
+* evaluation, testing, demonstration, or assessment purposes.
 
-Complete licensing terms are available in:
+Evaluation use may include testing the software within an organization before deciding whether to adopt or deploy it for operational or production use.
+
+### Commercial and Organizational Use
+
+Use of NIST Editor for **commercial, professional, governmental, forensic, law-enforcement, organizational, operational, or production purposes** is subject to the NIST Editor **End-User License Agreement (EULA)**.
+
+A commercial-use license is granted, subject to the terms of the EULA, upon receipt of a support contribution made in connection with NIST Editor.
+
+> **There is no minimum contribution amount. Any support contribution, regardless of amount, constitutes sufficient consideration for the commercial-use license granted under the EULA.**
+
+Organizations and professionals intending to use NIST Editor for purposes other than personal use or evaluation should review the EULA before deployment or operational use.
+
+### Restrictions and Legal Terms
+
+The EULA contains the complete terms governing the software, including:
+
+* permitted and prohibited uses;
+* personal and evaluation use;
+* commercial and organizational licensing;
+* redistribution and sublicensing restrictions;
+* intellectual-property rights;
+* warranty disclaimers;
+* limitations of liability; and
+* termination conditions.
+
+Unless expressly permitted by the EULA, the license does not grant the right to redistribute, sublicense, sell, relicense, or commercially distribute NIST Editor or modified versions of it.
+
+> **In the event of any conflict between this README and the EULA, the EULA governs.**
+
+### Full License Agreement
+
+The complete Software License Agreement is included with NIST Editor and is available from:
 
 **Help → About → Software License Agreement (EULA)**
 
+By installing, accessing, or using NIST Editor, you acknowledge that your use of the software is subject to the applicable terms of the EULA.
+
 ---
 
-# Download
+## Download
 
 Download the latest Windows release from the **Releases** section.
 
@@ -323,7 +357,7 @@ No installation is required.
 
 ---
 
-# Documentation
+## Documentation
 
 The integrated Help includes documentation for:
 
@@ -338,7 +372,7 @@ The integrated Help includes documentation for:
 
 ---
 
-# Reporting Issues
+## Reporting Issues
 
 Bug reports and feature requests are welcome.
 
@@ -353,22 +387,9 @@ When reporting issues please include:
 
 ---
 
-# Roadmap
+## Screenshots
 
-Future development includes:
-
-- Additional implementation profiles
-- Enhanced XML interoperability
-- Expanded dental support
-- Improved comparison tools
-- Additional image format diagnostics
-- Continued standards alignment
-
----
-
-# Screenshots
-
-## Main Window
+### Main Window
 
 <p align="center">
 <img src="docs/images/main-window.png" width="1000">
@@ -376,7 +397,7 @@ Future development includes:
 
 ---
 
-## Image Preview
+### Image Preview
 
 <p align="center">
 <img src="docs/images/main-window-light.png" width="1000">
@@ -384,7 +405,7 @@ Future development includes:
 
 ---
 
-## Validation
+### Validation
 
 <p align="center">
 <img src="docs/images/validation.png" width="1000">
@@ -392,7 +413,7 @@ Future development includes:
 
 ---
 
-## Fingerprint Quality Analysis
+### Fingerprint Quality Analysis
 
 <p align="center">
 <img src="docs/images/nfiq2-overlay.png" width="1000">
@@ -400,7 +421,7 @@ Future development includes:
 
 ---
 
-## Schema Browser
+### Schema Browser
 
 <p align="center">
 <img src="docs/images/schema-browser.png" width="1000">
@@ -408,7 +429,7 @@ Future development includes:
 
 ---
 
-## Help
+### Help
 
 <p align="center">
 <img src="docs/images/help.png" width="1000">
@@ -416,7 +437,7 @@ Future development includes:
 
 ---
 
-## About
+### About
 
 <p align="center">
 <img src="docs/images/about.png" width="1000">
@@ -424,8 +445,8 @@ Future development includes:
 
 ---
 
-# Copyright
+## Copyright
 
-Copyright © Adrian Stoica.
+Copyright © Adrian Stoica, 2026.
 
 All rights reserved.

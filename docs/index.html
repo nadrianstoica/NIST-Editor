@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>NIST Editor – ANSI/NIST-ITL Biometric File Viewer, Editor & Validator</title>
+  <meta name="description" content="NIST Editor by Adrian Stoica is a Windows application for viewing, editing, validating and converting ANSI/NIST-ITL biometric files, with NFIQ2 fingerprint quality analysis, WSQ support and offline operation.">
+  <meta name="author" content="Adrian Stoica">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://nadrianstoica.github.io/NIST-Editor/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NIST Editor">
+  <meta property="og:title" content="NIST Editor – ANSI/NIST-ITL Biometric File Viewer, Editor & Validator">
+  <meta property="og:description" content="Windows ANSI/NIST-ITL biometric record viewer, editor, validator and NFIQ2 fingerprint quality analysis tool.">
+  <meta property="og:url" content="https://nadrianstoica.github.io/NIST-Editor/">
+  <meta property="og:image" content="https://nadrianstoica.github.io/NIST-Editor/images/main-window.png">
+  <meta property="og:image:alt" content="NIST Editor displaying an ANSI/NIST-ITL biometric record">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NIST Editor – ANSI/NIST-ITL Biometric File Viewer, Editor & Validator">
+  <meta name="twitter:description" content="Windows ANSI/NIST-ITL biometric record viewer, editor, validator and NFIQ2 fingerprint quality analysis tool.">
+  <meta name="twitter:image" content="https://nadrianstoica.github.io/NIST-Editor/images/main-window.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "NIST Editor",
+    "alternateName": "ANSI/NIST-ITL Biometric File Editor",
+    "description": "Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric records.",
+    "url": "https://nadrianstoica.github.io/NIST-Editor/",
+    "downloadUrl": "https://github.com/nadrianstoica/NIST-Editor/releases/latest",
+    "operatingSystem": "Windows 10, Windows 11",
+    "applicationCategory": "UtilitiesApplication",
+    "author": {
+      "@type": "Person",
+      "name": "Adrian Stoica",
+      "url": "https://github.com/nadrianstoica"
+    },
+    "sameAs": [
+      "https://github.com/nadrianstoica/NIST-Editor"
+    ],
+    "featureList": [
+      "ANSI/NIST-ITL biometric record viewing and editing",
+      "Traditional ANSI/NIST and XML support",
+      "Standards-aware validation",
+      "NFIQ2 fingerprint quality analysis",
+      "WSQ and biometric image support",
+      "Offline local processing"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      color-scheme:dark;
+      --bg:#07111f;--text:#eaf2fa;--muted:#aabccc;--line:rgba(255,255,255,.11);
+      --accent:#58a7ff;--accent2:#75e0c5;--max:1180px
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);line-height:1.62;background:radial-gradient(circle at 18% -8%,rgba(88,167,255,.18),transparent 34rem),radial-gradient(circle at 90% 15%,rgba(117,224,197,.11),transparent 28rem),linear-gradient(180deg,var(--bg),#050b14 75%)}
+    a{color:inherit} img{max-width:100%}.wrap{width:min(var(--max),calc(100% - 36px));margin:0 auto}
+    .nav{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .navin{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:800;text-decoration:none}
+    nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;font-size:.95rem}nav a:hover{color:#fff}
+    .hero{padding:86px 0 54px;text-align:center}.eyebrow{display:inline-block;padding:7px 11px;border:1px solid rgba(88,167,255,.35);border-radius:999px;background:rgba(88,167,255,.08);color:#bddcff;font-weight:750;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em}
+    h1{max-width:1000px;margin:22px auto 18px;font-size:clamp(2.55rem,6vw,5.35rem);line-height:.99;letter-spacing:-.055em}
+    h2{margin:0 0 10px;font-size:clamp(1.8rem,3vw,2.55rem);line-height:1.12;letter-spacing:-.035em}h3{margin:0 0 8px}
+    .gradient{background:linear-gradient(90deg,#fff,#a6d0ff 50%,#91efd8);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:850px;margin:0 auto;color:var(--muted);font-size:clamp(1.05rem,2vw,1.28rem)}
+    .actions{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.btn{display:inline-flex;min-height:46px;padding:0 18px;align-items:center;justify-content:center;border-radius:12px;text-decoration:none;font-weight:750;border:1px solid var(--line)}
+    .primary{background:linear-gradient(135deg,#348cf1,#3dbb9e);border-color:transparent}.secondary{background:rgba(255,255,255,.045)}
+    .heroimg,.shot{padding:8px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.035);box-shadow:0 24px 70px rgba(0,0,0,.32);overflow:hidden}
+    .heroimg{margin-top:54px}.heroimg img,.shot img{display:block;border-radius:13px;width:100%}
+    section{padding:62px 0}.head{max-width:760px;margin-bottom:28px}.muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:22px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(19,39,64,.72),rgba(10,22,37,.82))}.card p{margin:0;color:var(--muted)}
+    .pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.pill{padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.045);border:1px solid var(--line);color:#cbd8e5;font-size:.88rem}
+    .split{display:grid;grid-template-columns:.95fr 1.05fr;gap:26px;align-items:center}.checks{padding:0;margin:20px 0 0;list-style:none;display:grid;gap:10px}.checks li{display:flex;gap:10px;color:#c7d5e2}.checks li:before{content:"✓";color:var(--accent2);font-weight:900}
+    .notice{padding:16px 18px;border-radius:14px;border:1px solid rgba(117,224,197,.25);background:rgba(117,224,197,.065);color:#ceeae4}
+    .cta{margin:40px 0 72px;padding:38px 24px;text-align:center;border:1px solid rgba(88,167,255,.25);border-radius:22px;background:linear-gradient(180deg,rgba(20,43,70,.75),rgba(9,21,35,.86))}
+    footer{padding:30px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    @media(max-width:860px){.grid,.split{grid-template-columns:1fr}.hero{padding-top:62px}}
+    @media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 24px))}nav a:not(.mobile){display:none}section{padding:48px 0}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="#top">NIST Editor</a>
+      <nav aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#standards">Standards</a>
+        <a href="#privacy">Privacy</a>
+        <a class="mobile" href="https://github.com/nadrianstoica/NIST-Editor">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <div class="eyebrow">Windows 10/11 · Offline · ANSI/NIST-ITL</div>
+      <h1><span class="gradient">NIST Editor</span><br>Biometric record inspection without guesswork.</h1>
+      <p class="lead">NIST Editor by Adrian Stoica (<strong>nadrianstoica</strong>) is a Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric files, including fingerprint, facial, iris and other biometric records.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/nadrianstoica/NIST-Editor/releases/latest">Download latest Windows build</a>
+        <a class="btn secondary" href="https://github.com/nadrianstoica/NIST-Editor">View on GitHub</a>
+      </div>
+      <div class="heroimg"><img src="images/main-window.png" alt="NIST Editor displaying an ANSI/NIST-ITL biometric record"></div>
+    </div>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="head">
+          <h2>Built for real ANSI/NIST workflows</h2>
+          <p class="muted">Inspect records, preserve payloads, validate standards constraints and analyze fingerprint quality from one desktop tool.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><h3>View & edit</h3><p>Open Traditional ANSI/NIST records, edit supported fields, preserve binary payloads and maintain lossless round trips.</p></article>
+          <article class="card"><h3>Validate</h3><p>Check mandatory fields, formats, code tables, image metadata, record relationships and profile-specific constraints.</p></article>
+          <article class="card"><h3>Convert</h3><p>Work with Traditional ANSI/NIST and XML representations, including Traditional ↔ XML conversion.</p></article>
+          <article class="card"><h3>NFIQ2 analysis</h3><p>Run local fingerprint quality analysis with quality scores, minutiae statistics and image overlays.</p></article>
+          <article class="card"><h3>Biometric images</h3><p>Decode and inspect WSQ, JPEG, JPEG 2000, PNG, BMP, TIFF, JPEG-LS, DICOM and raw raster formats.</p></article>
+          <article class="card"><h3>Offline operation</h3><p>Biometric records remain local. Decoding, validation and quality analysis do not require cloud processing.</p></article>
+        </div>
+        <div class="pills" aria-label="Key capabilities">
+          <span class="pill">ANSI/NIST-ITL</span><span class="pill">NFIQ2</span><span class="pill">WSQ</span><span class="pill">Fingerprint</span><span class="pill">Face</span><span class="pill">Iris</span><span class="pill">EBTS</span><span class="pill">INTERPOL</span><span class="pill">XML</span><span class="pill">Windows</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="standards">
+      <div class="wrap split">
+        <div>
+          <h2>Standards-aware editing and validation</h2>
+          <p class="muted">Built-in knowledge for multiple biometric standards and implementation profiles, with contextual validation and repair guidance where applicable.</p>
+          <ul class="checks">
+            <li>ANSI/NIST-ITL 1-2025</li><li>ANSI/NIST-ITL 1-2011</li><li>FBI EBTS</li><li>INTERPOL</li><li>Optional imported implementation profiles</li><li>Traditional and XML record handling</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="images/validation.png" alt="NIST Editor validation results for an ANSI/NIST biometric record"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <div class="shot"><img src="images/nfiq2-overlay.png" alt="NFIQ2 fingerprint quality analysis overlay in NIST Editor"></div>
+        <div>
+          <h2>Integrated NFIQ2 fingerprint quality analysis</h2>
+          <p class="muted">Evaluate fingerprint quality locally and inspect the analysis visually over the decoded image used for processing.</p>
+          <ul class="checks">
+            <li>Fingerprint quality score and assessment</li><li>Ridge endings and bifurcations</li><li>Minutiae statistics</li><li>Overlay visualization</li><li>CSV and PNG export support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="wrap">
+        <div class="head">
+          <h2>Local by design</h2>
+          <p class="muted">NIST Editor operates completely offline. No biometric record needs to be sent to an external service for decoding, editing, validation or quality analysis.</p>
+        </div>
+        <div class="notice">NIST Editor is an independent software project and is not affiliated with or endorsed by the U.S. National Institute of Standards and Technology (NIST).</div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="cta">
+        <h2>Download NIST Editor for Windows</h2>
+        <p class="muted">Public downloads are Windows executable builds distributed through GitHub Releases.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/nadrianstoica/NIST-Editor/releases/latest">Latest Windows build</a>
+          <a class="btn secondary" href="https://github.com/nadrianstoica/NIST-Editor">Repository</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© Adrian Stoica, 2026. All rights reserved.</div>
+      <div>Developed by <a href="https://github.com/nadrianstoica">Adrian Stoica (nadrianstoica)</a></div>
+    </div>
+  </footer>
+</body>
+</html>

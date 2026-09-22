@@ -8,8 +8,8 @@
 
 ## Comprehensive ANSI/NIST Biometric File Viewer, Editor, Validator and Analysis Tool
 
-**NIST Editor** is a professional Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST biometric files.
-The application processes ANSI/NIST-ITL files using traditional binary or NIEM-conformant XML encodings.
+
+**NIST Editor** by Adrian Stoica (nadrianstoica) is a Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric files, including fingerprint, facial, iris and other biometric records.
 
 It has been designed for:
 

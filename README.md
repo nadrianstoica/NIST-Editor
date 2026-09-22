@@ -1,8 +1,10 @@
-# NIST Editor
-
+# NIST Editor – ANSI/NIST-ITL Biometric File Viewer, Editor & Validator
 ![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D4?style=for-the-badge)
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4?style=for-the-badge)
 ![WebView2](https://img.shields.io/badge/WebView2-Required-00A300?style=for-the-badge)
+
+🌐 **Website:** https://nadrianstoica.github.io/NIST-Editor/  
+⬇️ **Latest Windows build:** https://github.com/nadrianstoica/NIST-Editor/releases/latest
 
 ---
 
@@ -10,6 +12,8 @@
 
 
 **NIST Editor** by Adrian Stoica (nadrianstoica) is a Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric files, including fingerprint, facial, iris and other biometric records.
+
+> **Independent project:** NIST Editor is not affiliated with or endorsed by the U.S. National Institute of Standards and Technology (NIST).
 
 It has been designed for:
 
@@ -347,11 +351,11 @@ By installing, accessing, or using NIST Editor, you acknowledge that your use of
 
 ## Download
 
-Download the latest Windows release from the **Releases** section.
+Download the latest public **Windows executable build** from the **Releases** section:
 
-```
-NISTBrowserDesktop_WebView2_vXXX.zip
-```
+https://github.com/nadrianstoica/NIST-Editor/releases/latest
+
+Public release archives contain the Windows application builds intended for end users. Project/source archives are not distributed as NIST Editor release downloads.
 
 No installation is required.
 

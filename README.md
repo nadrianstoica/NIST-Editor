@@ -454,3 +454,5 @@ When reporting issues please include:
 Copyright © Adrian Stoica, 2026.
 
 All rights reserved.
+
+<sub>Proudly engineered in Romania.</sub>

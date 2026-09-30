@@ -8,10 +8,18 @@
 
 ---
 
-## Comprehensive ANSI/NIST Biometric File Viewer, Editor, Validator and Analysis Tool
+## ANSI/NIST-ITL Biometric File Viewer, Editor, Validator, Converter and Analysis Tool for Windows
 
 
 **NIST Editor** by Adrian Stoica (nadrianstoica) is a Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric files, including fingerprint, facial, iris and other biometric records.
+
+## What is NIST Editor?
+
+NIST Editor is an independent Windows desktop application for working with ANSI/NIST-ITL biometric interchange files. It can open, inspect, edit, validate, convert and analyze biometric transactions containing fingerprint, palmprint, facial, iris, DNA and other biometric records.
+
+NIST Editor supports Traditional ANSI/NIST files and XML, biometric image formats such as WSQ and JPEG 2000, implementation profiles such as FBI EBTS, and integrated NFIQ2 fingerprint quality analysis.
+
+NIST Editor is developed by Adrian Stoica (GitHub: nadrianstoica) and is not affiliated with or endorsed by the U.S. National Institute of Standards and Technology (NIST).
 
 > **Independent project:** NIST Editor is not affiliated with or endorsed by the U.S. National Institute of Standards and Technology (NIST).
 

@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="uaQZ-3x0DmN8lUnRbCyIibaFpX5PYq2GniK0Yw9nf5Y" />
 
-  <title>NIST Editor – ANSI/NIST-ITL Biometric File Viewer, Editor, Validator & Converter for Windows</title>
-  <meta name="description" content="NIST Editor is an independent Windows application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric files, including fingerprints, facial images, iris records, WSQ, XML, FBI EBTS and NFIQ2.">
+  <title>NIST Editor — Free ANSI/NIST-ITL Biometric Editor, Validator & Analysis Tool for Windows</title>
+  <meta name="description" content="Free for personal and commercial use. Inspect, edit, validate, compare and analyze ANSI/NIST-ITL biometric files offline with XML, WSQ, FBI EBTS and NFIQ2 tools.">
   <meta name="author" content="Adrian Stoica">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://nadrianstoica.github.io/NIST-Editor/">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="NIST Editor">
-  <meta property="og:title" content="NIST Editor – ANSI/NIST-ITL Biometric File Viewer, Editor, Validator & Converter for Windows">
-  <meta property="og:description" content="Independent Windows application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric files with NFIQ2, WSQ, XML and FBI EBTS support.">
+  <meta property="og:title" content="NIST Editor — Free ANSI/NIST-ITL Biometric Editor and Validator">
+  <meta property="og:description" content="Free for everyone: inspect, edit, validate, compare and analyze ANSI/NIST-ITL biometric transactions offline with NFIQ2, WSQ, XML and FBI EBTS support.">
   <meta property="og:url" content="https://nadrianstoica.github.io/NIST-Editor/">
   <meta property="og:image" content="https://nadrianstoica.github.io/NIST-Editor/images/main-window.png">
   <meta property="og:image:alt" content="NIST Editor displaying an ANSI/NIST-ITL biometric record">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="NIST Editor – ANSI/NIST-ITL Biometric File Viewer, Editor, Validator & Converter for Windows">
-  <meta name="twitter:description" content="Independent Windows application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric files with NFIQ2, WSQ, XML and FBI EBTS support.">
+  <meta name="twitter:description" content="Free ANSI/NIST-ITL biometric file editor for Windows. Inspect, validate, compare and analyze biometric records offline.">
   <meta name="twitter:image" content="https://nadrianstoica.github.io/NIST-Editor/images/main-window.png">
 
   <script type="application/ld+json">
@@ -30,9 +30,10 @@
     "@type": "SoftwareApplication",
     "name": "NIST Editor",
     "alternateName": "ANSI/NIST-ITL Biometric File Editor",
-    "description": "Independent Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric files, including fingerprint, facial, iris and other biometric records.",
+    "description": "Free for personal and commercial use. Offline Windows tool for inspecting, editing, validating, comparing, converting and analyzing ANSI/NIST-ITL biometric transactions.",
     "url": "https://nadrianstoica.github.io/NIST-Editor/",
     "downloadUrl": "https://github.com/nadrianstoica/NIST-Editor/releases/latest",
+    "isAccessibleForFree": true,
     "operatingSystem": "Windows 10, Windows 11",
     "applicationCategory": "DeveloperApplication",
     "author": {
@@ -51,7 +52,9 @@
       "Standards-aware validation",
       "NFIQ2 fingerprint quality analysis",
       "WSQ and biometric image support",
-      "Offline local processing"
+      "Offline local processing",
+      "Binary representation comparison",
+      "Raw ASCII and hierarchical structure views"
     ]
   }
   </script>
@@ -96,6 +99,7 @@
         <a href="#features">Features</a>
         <a href="#standards">Standards</a>
         <a href="#privacy">Privacy</a>
+        <a href="#license">Free License</a>
         <a class="mobile" href="https://github.com/nadrianstoica/NIST-Editor">GitHub</a>
       </nav>
     </div>
@@ -103,11 +107,12 @@
 
   <main id="top">
     <div class="wrap hero">
-      <div class="eyebrow">Windows 10/11 · Offline · ANSI/NIST-ITL</div>
-      <h1><span class="gradient">NIST Editor</span><br>Biometric record inspection without guesswork.</h1>
-      <p class="lead">NIST Editor by Adrian Stoica (<strong>nadrianstoica</strong>) is a Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric files, including fingerprint, facial, iris and other biometric records.</p>
+      <div class="eyebrow">Windows 10/11 · Offline · Free for Everyone</div>
+      <h1><span class="gradient">NIST Editor</span><br>Understand every byte.</h1>
+      <p class="lead"><strong>Understand every byte of your biometric transactions.</strong> Inspect, edit, validate, compare and analyze ANSI/NIST-ITL files in one application, designed for developers, forensic laboratories, researchers and biometric system integrators.</p>
+      <p class="lead" style="margin-top:18px"><strong>Free for personal, professional, governmental and commercial use.</strong> No license fees. No subscriptions. No cloud processing requirement.</p>
       <div class="actions">
-        <a class="btn primary" href="https://github.com/nadrianstoica/NIST-Editor/releases/latest">Download latest Windows build</a>
+        <a class="btn primary" href="https://github.com/nadrianstoica/NIST-Editor/releases/latest">Download latest Windows release</a>
         <a class="btn secondary" href="https://github.com/nadrianstoica/NIST-Editor">View on GitHub</a>
       </div>
       <div class="heroimg"><img src="images/main-window.png" alt="NIST Editor displaying an ANSI/NIST-ITL biometric record"></div>
@@ -116,16 +121,16 @@
     <section id="features">
       <div class="wrap">
         <div class="head">
-          <h2>Built for real ANSI/NIST workflows</h2>
-          <p class="muted">Inspect records, preserve payloads, validate standards constraints and analyze fingerprint quality from one desktop tool.</p>
+          <h2>One application. Complete visibility.</h2>
+          <p class="muted">Investigate rejected transactions, troubleshoot interoperability and inspect both the logical content and original binary representation of biometric records.</p>
         </div>
         <div class="grid">
-          <article class="card"><h3>View & edit</h3><p>Open Traditional ANSI/NIST records, edit supported fields, preserve binary payloads and maintain lossless round trips.</p></article>
-          <article class="card"><h3>Validate</h3><p>Check mandatory fields, formats, code tables, image metadata, record relationships and profile-specific constraints.</p></article>
-          <article class="card"><h3>Convert</h3><p>Work with Traditional ANSI/NIST and XML representations, including Traditional ↔ XML conversion.</p></article>
-          <article class="card"><h3>NFIQ2 analysis</h3><p>Run local fingerprint quality analysis with quality scores, minutiae statistics and image overlays.</p></article>
-          <article class="card"><h3>Biometric images</h3><p>Decode and inspect WSQ, JPEG, JPEG 2000, PNG, BMP, TIFF, JPEG-LS, DICOM and raw raster formats.</p></article>
-          <article class="card"><h3>Offline operation</h3><p>Biometric records remain local. Decoding, validation and quality analysis do not require cloud processing.</p></article>
+          <article class="card"><h3>Explore and edit</h3><p>Navigate records, fields, subfields and items. Use structured, Raw ASCII and Hex views while preserving supported binary payloads.</p></article>
+          <article class="card"><h3>Validate with confidence</h3><p>Identify structural, field-value, profile, compression, resolution and cross-record consistency issues.</p></article>
+          <article class="card"><h3>Compare beyond the surface</h3><p>Understand logical changes and subtle byte-level differences in field formatting, encodings and separators.</p></article>
+          <article class="card"><h3>Traditional and XML</h3><p>Import, export and convert supported Traditional ANSI/NIST and XML representations.</p></article>
+          <article class="card"><h3>Inspect biometric images</h3><p>Preview and inspect WSQ, JPEG, JPEG 2000, PNG, TIFF, DICOM and other supported image formats.</p></article>
+          <article class="card"><h3>Analyze fingerprint quality</h3><p>Use integrated NFIQ2 analysis with quality scores, minutiae statistics and image overlays for suitable fingerprints.</p></article>
         </div>
         <div class="pills" aria-label="Key capabilities">
           <span class="pill">ANSI/NIST-ITL</span><span class="pill">NFIQ2</span><span class="pill">WSQ</span><span class="pill">Fingerprint</span><span class="pill">Face</span><span class="pill">Iris</span><span class="pill">EBTS</span><span class="pill">INTERPOL</span><span class="pill">XML</span><span class="pill">Windows</span>
@@ -136,8 +141,8 @@
     <section id="standards">
       <div class="wrap split">
         <div>
-          <h2>Standards-aware editing and validation</h2>
-          <p class="muted">Built-in knowledge for multiple biometric standards and implementation profiles, with contextual validation and repair guidance where applicable.</p>
+          <h2>Designed for real-world biometric workflows</h2>
+          <p class="muted">From investigating rejected files to developing biometric integrations, NIST Editor helps you inspect record content, understand structural issues and troubleshoot interoperability using supported standards and profiles.</p>
           <ul class="checks">
             <li>ANSI/NIST-ITL 1-2025</li><li>ANSI/NIST-ITL 1-2011</li><li>FBI EBTS</li><li>INTERPOL</li><li>Optional imported implementation profiles</li><li>Traditional and XML record handling</li>
           </ul>
@@ -151,7 +156,7 @@
         <div class="shot"><img src="images/nfiq2-overlay.png" alt="NFIQ2 fingerprint quality analysis overlay in NIST Editor"></div>
         <div>
           <h2>Integrated NFIQ2 fingerprint quality analysis</h2>
-          <p class="muted">Evaluate fingerprint quality locally and inspect the analysis visually over the decoded image used for processing.</p>
+          <p class="muted">Assess suitable fingerprint images locally, inspect minutiae and other diagnostics, and visualize analysis results over the decoded fingerprint used for processing.</p>
           <ul class="checks">
             <li>Fingerprint quality score and assessment</li><li>Ridge endings and bifurcations</li><li>Minutiae statistics</li><li>Overlay visualization</li><li>CSV and PNG export support</li>
           </ul>
@@ -162,17 +167,32 @@
     <section id="privacy">
       <div class="wrap">
         <div class="head">
-          <h2>Local by design</h2>
-          <p class="muted">NIST Editor operates completely offline. No biometric record needs to be sent to an external service for decoding, editing, validation or quality analysis.</p>
+          <h2>Your biometric data stays local</h2>
+          <p class="muted">Supported editing, decoding, validation, conversion and quality analysis take place on your computer. No cloud upload or online processing is required for these functions.</p>
         </div>
         <div class="notice">NIST Editor is an independent software project and is not affiliated with or endorsed by the U.S. National Institute of Standards and Technology (NIST).</div>
       </div>
     </section>
 
+    <section id="license">
+      <div class="wrap split">
+        <div>
+          <h2>Professional tools. Free for everyone.</h2>
+          <p class="muted">Use NIST Editor for personal projects, research, education, software development, commercial integration, forensic examination and government operations. <strong>No commercial license purchase, subscription or donation is required.</strong></p>
+          <p class="muted">NIST Editor is independently developed, copyright-protected software. Its license permits free use but restricts unauthorized redistribution, resale and sublicensing. Full terms are available in the application under <strong>About → Software License</strong>.</p>
+        </div>
+        <div class="card">
+          <h3>Support independent development</h3>
+          <p>Voluntary donations help support continued improvements, but they never affect your right to use the software.</p>
+          <p style="margin-top:14px"><a href="https://github.com/nadrianstoica/NIST-Editor#support-independent-development">See optional contribution details on GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
     <div class="wrap">
       <section class="cta">
-        <h2>Download NIST Editor for Windows</h2>
-        <p class="muted">Public downloads are Windows executable builds distributed through GitHub Releases.</p>
+        <h2>Download NIST Editor</h2>
+        <p class="muted">Get the latest Windows release and start exploring biometric transactions. Free for personal and commercial use; no registration or commercial-use license required.</p>
         <div class="actions">
           <a class="btn primary" href="https://github.com/nadrianstoica/NIST-Editor/releases/latest">Latest Windows build</a>
           <a class="btn secondary" href="https://github.com/nadrianstoica/NIST-Editor">Repository</a>
@@ -183,7 +203,7 @@
 
   <footer>
     <div class="wrap foot">
-      <div>© Adrian Stoica, 2026. All rights reserved.</div>
+      <div>© Adrian Stoica, 2026. All rights reserved. · Free for personal and commercial use.</div>
       <div>Developed by <a href="https://github.com/nadrianstoica">Adrian Stoica (nadrianstoica)</a></div>
     </div>
   </footer>

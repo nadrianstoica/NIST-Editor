@@ -1,466 +1,188 @@
-# NIST Editor – ANSI/NIST-ITL Biometric File Viewer, Editor & Validator
-![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D4?style=for-the-badge)
-![.NET](https://img.shields.io/badge/.NET-10-512BD4?style=for-the-badge)
-![WebView2](https://img.shields.io/badge/WebView2-Required-00A300?style=for-the-badge)
+# NIST Editor
 
-🌐 **Website:** https://nadrianstoica.github.io/NIST-Editor/  
-⬇️ **Latest Windows build:** https://github.com/nadrianstoica/NIST-Editor/releases/latest
+### Advanced ANSI/NIST Biometric File Viewer, Editor, Validator & Analysis Tool
 
----
+**Free for everyone · Works offline · Windows 10/11**
 
-## ANSI/NIST-ITL Biometric File Viewer, Editor, Validator, Converter and Analysis Tool for Windows
-
-
-**NIST Editor** by Adrian Stoica (nadrianstoica) is a Windows desktop application for viewing, editing, validating, converting and analyzing ANSI/NIST-ITL biometric files, including fingerprint, facial, iris and other biometric records.
-
-## What is NIST Editor?
-
-NIST Editor is an independent Windows desktop application for working with ANSI/NIST-ITL biometric interchange files. It can open, inspect, edit, validate, convert and analyze biometric transactions containing fingerprint, palmprint, facial, iris, DNA and other biometric records.
-
-NIST Editor supports Traditional ANSI/NIST files and XML, biometric image formats such as WSQ and JPEG 2000, implementation profiles such as FBI EBTS, and integrated NFIQ2 fingerprint quality analysis.
-
-NIST Editor is developed by Adrian Stoica (GitHub: nadrianstoica) and is not affiliated with or endorsed by the U.S. National Institute of Standards and Technology (NIST).
-
-> **Independent project:** NIST Editor is not affiliated with or endorsed by the U.S. National Institute of Standards and Technology (NIST).
-
-It has been designed for:
-
-- Biometric software engineers
-- AFIS developers
-- Law enforcement agencies
-- Border control systems
-- Forensic laboratories
-- Government agencies
-- Biometric SDK vendors
-- Researchers
-- System integrators
-
-The application focuses on **correctness**, **interoperability**, **standards compliance**, **lossless editing**, and **offline operation**.
+[**Download Latest Release**](https://github.com/nadrianstoica/NIST-Editor/releases/latest) · [**Official Website**](https://nadrianstoica.github.io/NIST-Editor/)
 
 ---
 
-## Live Demonstration
+## Understand, Validate and Edit Biometric Transactions
 
-<p align="center">
+**NIST Editor** is an independent application for working with ANSI/NIST-ITL biometric interchange files.
 
-<img src="docs/images/demo.gif" width="1000">
+Designed for biometric engineers, forensic specialists, system integrators, researchers, and organizations working with biometric identification systems, it brings together file inspection, editing, validation, format conversion, image decoding, and fingerprint quality analysis in one application.
 
-</p>
+Whether you need to investigate a rejected biometric transaction, validate interoperability, inspect an unusual field, compare two files, or analyze fingerprint quality, NIST Editor provides visibility into both the **logical structure and underlying binary representation** of biometric data.
 
-*A short demonstration showing opening a NIST file, image preview, field editing, validation, and integrated NFIQ2 fingerprint quality analysis.*
+**No license fees. No separate commercial-use license required. No cloud dependency.**
 
----
+![NIST Editor main window](docs/images/main-window.png)
 
-## Main Features
+## Key Capabilities
 
-### ANSI/NIST Traditional Support
+### Inspect and Edit ANSI/NIST Files
 
-✔ Open Traditional ANSI/NIST files
+Open and explore biometric transactions through a structured, hierarchical interface.
 
-✔ Edit any supported record
+- Inspect records, fields, subfields and information items.
+- Create or modify supported biometric record types.
+- Explore source data through Hex, Raw ASCII and hierarchical Structure views.
+- Preserve original data where possible, including binary payloads and source formatting.
+- Automatically maintain structural information such as record lengths and transaction content.
 
-✔ Byte-preserving binary payload handling
+### Validate Against Biometric Standards
 
-✔ Lossless Traditional → Traditional round-trip
+Identify potential interoperability issues before files reach receiving systems.
 
-✔ Automatic LEN/CNT regeneration
+- Built-in ANSI/NIST-ITL standards and implementation profiles.
+- Support for FBI EBTS, INTERPOL and additional profiles.
+- Mandatory-field, format, range and code-table validation.
+- Cross-field and cross-record consistency checks.
+- Image metadata, resolution, compression and DPI diagnostics.
+- Contextual validation messages and suggested corrections.
 
-✔ Legacy separator preservation
+### Compare Transactions — Beyond Logical Differences
 
-✔ Variable-length and fixed-length record support
+Investigate not only *what* changed, but *how the file is represented*.
 
----
+- Compare record and field contents.
+- Identify logical differences between transactions.
+- Detect binary representation differences even when logical values match.
+- Examine original field-tag formatting, encoding, separators and source bytes.
+- Diagnose differences that can affect receiving-system interoperability.
 
-### XML Support
+### Traditional and XML Support
 
-✔ Import ANSI/NIST XML
+Work with both Traditional ANSI/NIST and supported XML representations.
 
-✔ Export ANSI/NIST XML
+- Import and export supported file representations.
+- Convert between Traditional and XML formats.
+- Preserve supported biometric metadata and binary content.
+- Inspect and validate converted transactions.
 
-✔ Lossless XML round-trip
+### Biometric Image Inspection
 
-✔ Traditional ↔ XML conversion
+Preview and investigate embedded biometric images using supported decoders and metadata inspection tools.
 
-✔ Preservation of binary payloads
+Supported formats include **WSQ, JPEG, JPEG 2000, PNG, BMP, TIFF, JPEG-LS, DICOM and raw raster data**.
 
----
+### Integrated NFIQ2 Fingerprint Quality Analysis
 
-### Standards-Aware Editing
+Analyze suitable fingerprint images directly within the application.
 
-Built-in knowledge of multiple biometric standards and implementation profiles.
+- Fingerprint quality scores and diagnostic information.
+- Minutiae statistics.
+- Ridge-ending and bifurcation visualization.
+- Quality overlays displayed over the analyzed fingerprint.
+- Exportable analysis results and images.
 
-Examples include:
+NFIQ2 eligibility depends on image content and applicable analysis requirements.
 
-- ANSI/NIST-ITL 1-2025
-- ANSI/NIST-ITL 1-2011
-- FBI EBTS
-- INTERPOL
-- Optional imported implementation profiles
+### Local Processing and Privacy
 
-Features include:
+**Your biometric files remain on your computer.**
 
-- automatic profile detection
-- profile-specific validation
-- schema-aware editing
-- contextual hints
-- code tables
-- repair suggestions
-- validation explanations
-
-Optional implementation profiles can be imported without modifying the built-in standards.
-
----
-
-## Supported Record Types
-
-Supports editing and validation of numerous ANSI/NIST record types including:
-
-- Type-1 Transaction Information
-- Type-2 User Defined Text
-- Type-3 Low Resolution Grayscale Fingerprint
-- Type-4 High Resolution Grayscale Fingerprint
-- Type-5 Low Resolution Binary Fingerprint
-- Type-6 High Resolution Binary Fingerprint
-- Type-7 User Defined Image
-- Type-8 Signature Image
-- Type-9 Minutiae
-- Type-10 Facial / SMT Image
-- Type-11 Voice
-- Type-12 Dental
-- Type-13 Latent Fingerprint
-- Type-14 Tenprint Fingerprint
-- Type-15 Palmprint
-- Type-16 User Defined Testing Image
-- Type-17 Iris
-- Type-18 DNA
-- Type-19 Plantar / Friction Ridge
-- Type-20 Source Representation
-- Type-21 Associated Context
-- Type-22 Non-photographic Imagery
-- Type-98 XML
-- Type-99 CBEFF Biometric Data Block
+NIST Editor performs its supported file editing, decoding, validation, conversion and quality-analysis operations locally, without requiring biometric data to be uploaded to a cloud service.
 
 ---
 
-## Image Support
+## Supported Standards and Record Types
 
-Supports many biometric image encodings including:
+NIST Editor includes support for multiple ANSI/NIST-ITL editions, including 1-2011 and 1-2025, together with FBI EBTS, INTERPOL and other supported implementation profiles.
 
-- WSQ
-- JPEG
-- JPEG 2000
-- PNG
-- BMP
-- TIFF
-- JPEG-LS
-- DICOM
-- RAW raster formats
+Its record-handling capabilities cover transaction information, descriptive text, fingerprint and palmprint imagery, facial imagery, iris data, minutiae, signatures, voice, dental, DNA, user-defined data and additional biometric record categories.
 
-Capabilities:
-
-✔ Automatic decoder detection
-
-✔ Image metadata extraction
-
-✔ Resolution verification
-
-✔ Compression verification
-
-✔ Preview generation
-
-✔ Payload preservation
+Specific capabilities and validation requirements depend on the selected standard and record type.
 
 ---
 
-## Fingerprint Quality Analysis
+## See NIST Editor in Action
 
-Integrated **NFIQ2** quality analysis.
-
-Features include:
-
-- Quality score
-- Quality assessment
-- Fingerprint overlay
-- Ridge endings
-- Bifurcations
-- Minutiae statistics
-- Processing time
-- Exported minutiae
-- Overlay rendering
-
-The overlay is rendered directly over the decoded image used for NFIQ2 processing.
-
----
-
-## Validation Engine
-
-The editor performs comprehensive validation including:
-
-✔ Mandatory fields
-
-✔ Field formats
-
-✔ Numeric ranges
-
-✔ Enumerations
-
-✔ Compression algorithms
-
-✔ Image metadata
-
-✔ Resolution consistency
-
-✔ DPI consistency
-
-✔ CGA consistency
-
-✔ Record relationships
-
-✔ Cross-field validation
-
-✔ Profile-specific validation
-
-Validation messages include contextual explanations and repair suggestions where applicable.
-
----
-
-## Image Preview
-
-The integrated preview supports:
-
-- automatic image detection
-- metadata inspection
-- safe payload preview
-- DPI diagnostics
-- compression diagnostics
-- embedded decoder selection
-
-Large binary payloads remain fully preserved.
-
----
-
-## Type-12 Dental Support
-
-Structured Traditional dental parsing including:
-
-- dental history
-- oral findings
-- structured list handling
-- image references
-- payload preservation
-
-JSON/XML dental payloads are safely preserved while providing secure preview capabilities.
-
----
-
-## NFIQ2 Integration
-
-Integrated NFIQ2 analysis provides:
-
-- fingerprint quality score
-- quality assessment
-- extracted minutiae
-- overlay visualization
-- feature statistics
-- CSV export
-- overlay PNG export
-
----
-
-## Privacy
-
-**NIST Editor operates completely offline.**
-
-No biometric records are transmitted to external services.
-
-No cloud processing is required.
-
-All decoding, validation and quality analysis are performed locally.
-
----
-
-## Standards
-
-The integrated Help contains references to major biometric standards including:
-
-- ANSI/NIST-ITL
-- FBI EBTS
-- INTERPOL
-- NIST Special Publications
-- ISO biometric standards
-- WSQ
-- JPEG 2000
-- JPEG-LS
-- NIEM
-- Additional reference documentation
-
----
-
-## Windows Desktop
-
-Public Windows releases are built using
-
-- .NET 10
-- Microsoft Edge WebView2
-
-The HTML application is embedded inside the executable.
-
----
-
-## License
-
-NIST Editor is **licensed, not sold**.
-
-### Free Personal and Evaluation Use
-
-NIST Editor may be used **free of charge** for:
-
-* personal, non-commercial use; and
-* evaluation, testing, demonstration, or assessment purposes.
-
-Evaluation use may include testing the software within an organization before deciding whether to adopt or deploy it for operational or production use.
-
-### Commercial and Organizational Use
-
-Use of NIST Editor for **commercial, professional, governmental, forensic, law-enforcement, organizational, operational, or production purposes** is subject to the NIST Editor **End-User License Agreement (EULA)**.
-
-A commercial-use license is granted, subject to the terms of the EULA, upon receipt of a support contribution made in connection with NIST Editor.
-
-> **There is no minimum contribution amount. Any support contribution, regardless of amount, constitutes sufficient consideration for the commercial-use license granted under the EULA.**
-
-Organizations and professionals intending to use NIST Editor for purposes other than personal use or evaluation should review the EULA before deployment or operational use.
-
-### Restrictions and Legal Terms
-
-The EULA contains the complete terms governing the software, including:
-
-* permitted and prohibited uses;
-* personal and evaluation use;
-* commercial and organizational licensing;
-* redistribution and sublicensing restrictions;
-* intellectual-property rights;
-* warranty disclaimers;
-* limitations of liability; and
-* termination conditions.
-
-Unless expressly permitted by the EULA, the license does not grant the right to redistribute, sublicense, sell, relicense, or commercially distribute NIST Editor or modified versions of it.
-
-> **In the event of any conflict between this README and the EULA, the EULA governs.**
-
-### Full License Agreement
-
-The complete Software License Agreement is included with NIST Editor and is available from:
-
-**Help → About → Software License Agreement (EULA)**
-
-By installing, accessing, or using NIST Editor, you acknowledge that your use of the software is subject to the applicable terms of the EULA.
-
----
-
-## Download
-
-Download the latest public **Windows executable build** from the **Releases** section:
-
-https://github.com/nadrianstoica/NIST-Editor/releases/latest
-
-Public release archives contain the Windows application builds intended for end users. Project/source archives are not distributed as NIST Editor release downloads.
-
-No installation is required.
-
----
-
-## Documentation
-
-The integrated Help includes documentation for:
-
-- Supported record types
-- Standards
-- Profiles
-- Validation rules
-- Compression algorithms
-- Image formats
-- Fingerprint quality analysis
-- Licensing
-
----
-
-## Reporting Issues
-
-Bug reports and feature requests are welcome.
-
-When reporting issues please include:
-
-- Application version
-- Windows version
-- Steps to reproduce
-- Screenshots
-- Sample file (if legally permissible)
-- optional: JSON with the internal metadata. Go to Help / Developer diagnostics / Export Canonical Debug JSON metadata only
-
----
-
-## Screenshots
-
-### Main Window
-
-<p align="center">
-<img src="docs/images/main-window.png" width="1000">
-</p>
-
----
-
-### Image Preview
-
-<p align="center">
-<img src="docs/images/main-window-light.png" width="1000">
-</p>
-
----
+![NIST Editor demonstration](docs/images/demo.gif)
 
 ### Validation
 
-<p align="center">
-<img src="docs/images/validation.png" width="1000">
-</p>
-
----
+![Validation interface](docs/images/validation.png)
 
 ### Fingerprint Quality Analysis
 
-<p align="center">
-<img src="docs/images/nfiq2-overlay.png" width="1000">
-</p>
+![NFIQ2 quality analysis](docs/images/nfiq2-overlay.png)
 
 ---
 
-### Schema Browser
+## Free Software License — Personal and Commercial Use
 
-<p align="center">
-<img src="docs/images/schema-browser.png" width="1000">
-</p>
+**NIST Editor is free to use by everyone.**
+
+You may use the application for:
+
+- Personal, educational and academic activities.
+- Research, development, testing and interoperability work.
+- Professional and commercial projects.
+- Government, law-enforcement and forensic activities.
+- Organizational and production environments.
+
+**No license purchase, subscription, registration, donation or separate commercial authorization is required.**
+
+NIST Editor remains copyrighted software, licensed rather than sold. Free use does not automatically grant permission to redistribute, resell, sublicense or repackage the application, and it does not designate the project as open-source software.
+
+The complete terms, including permitted uses, intellectual-property restrictions, warranty disclaimers and limitations of liability, are available in the application under **About → Software License**.
+
+## Support Independent Development
+
+NIST Editor is independently developed and maintained by Adrian Stoica.
+
+If the application saves you time or helps your work, a voluntary donation is a welcome way to support further improvements.
+
+**Donations are appreciated, never required.** They do not affect your right to use the software.
+
+<details>
+<summary>Voluntary bank-transfer details</summary>
+
+| Detail | Value |
+|---|---|
+| Beneficiary | Adrian Stoica |
+| IBAN | RO84 INGB 0000 9999 0039 8942 |
+| Bank | INGB CENTRALA |
+| Currency | RON |
+| SWIFT / BIC | INGBROBU |
+
+</details>
 
 ---
 
-### Help
+## Download for Windows
 
-<p align="center">
-<img src="docs/images/help.png" width="1000">
-</p>
+Download the latest published Windows executable from:
 
----
+**https://github.com/nadrianstoica/NIST-Editor/releases/latest**
 
-### About
+Windows builds use .NET 10 and Microsoft Edge WebView2 technology. Runtime requirements may vary by distribution package.
 
-<p align="center">
-<img src="docs/images/about.png" width="1000">
-</p>
+**Latest published version reviewed:** 2.0.467.
 
 ---
 
-## Copyright
+## Feedback and Contributions
 
-Copyright © Adrian Stoica, 2026.
+Bug reports, improvement suggestions and compatibility feedback are welcome.
 
-All rights reserved.
+When reporting a problem, please include the application version, relevant steps to reproduce it, and screenshots or diagnostic metadata where available.
 
-<sub>Proudly engineered in Romania.</sub>
+Do not upload real biometric records or sensitive personal data to public issues unless you are legally authorized to disclose them.
+
+---
+
+## About the Project
+
+NIST Editor is developed by **Adrian Stoica** as an independent software project.
+
+It is not affiliated with, sponsored by, certified by or officially endorsed by NIST, the FBI, INTERPOL, eu-LISA or other referenced organizations.
+
+References to standards and technologies are for technical and interoperability purposes. Validation results do not constitute official certification of file compliance.
+
+**Copyright © 2026 Adrian Stoica. All rights reserved.**
+
+*Independently developed in Romania.*
